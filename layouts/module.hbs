@@ -24,9 +24,9 @@
 <body>
 
     <div class="container">
-
-        {{ body }}
-
+        {{#parseFixture 'default-content.json'}}
+            {{ body }}
+        {{/parseFixture}}
     </div>
 
     <script src="bower_components/jquery/dist/jquery.js"></script>
