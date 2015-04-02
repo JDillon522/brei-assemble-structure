@@ -4,17 +4,14 @@
 <!--[if IE 8]>         <html class="no-js lt-ie9"> <![endif]-->
 <!--[if gt IE 8]><!--> <html class="no-js"> <!--<![endif]-->
     <head>
-        <meta charset="utf-8" />
-        <meta http-equiv="X-UA-Compatible" content="IE=edge" />
-        <title>Site Builder Static Assets</title>
+        <title>Static Assets</title>
         <meta name="description" content="" />
-        <meta name="viewport" content="width=device-width" />
+
+        {{> _meta}}
 
         <!-- Place favicon.ico and apple-touch-icon.png in the root directory -->
 
-        <!-- build:css(.tmp) css/main.css -->
-        <link rel="stylesheet" href="css/main.css" />
-        <!-- endbuild -->
+        {{> _css-main}}
 
         <style type="text/css">
             html, body { text-align: center; }
@@ -31,9 +28,7 @@
             .zebra-striping li a:hover { font-weight: bold; }
         </style>
 
-        <!-- build:js js/plugins/modernizr.optimized.js -->
-        <script src="bower_components/modernizr/modernizr.js"></script>
-        <!-- endbuild -->
+        {{> _js-modernizr}}
 
     </head>
     <body>
@@ -45,4 +40,7 @@
         </div>
 
     </body>
+
+    {{> _js-main}}
+
 </html>
